@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Play");
+
+:root {
+    --main-color: #3b4b9c;
+    --secondary-color: #262d61;
+    --accent-color: #FE7525;
+    --text-color: #fddbbf;
+    --hover-color: #f9b089;
+
+    --text-font: Comfortaa;
+    --title-font: Play;
+}
+
+header {
+    background-color: var(--main-color);
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header img {
+    width: 120px;
+    padding: 25px;
+    margin: 0 auto;
+    padding-right: 275px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+header h1 {
+    align-self: center;
+    padding: 25px;
+    font-size: 300%;
+    font-family: var(--title-font);
+    color: var(--text-color);
+    margin: 0 auto;
+    padding-left: 225px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    height: 250px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+nav a {
+    align-self: center;
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+
+nav a:hover {
+    color: var(--hover-color);
+}
+
+main {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: var(--accent-color);
+    font-family: var(--title-font);
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-bottom-color: var(--accent-color);
+}
+
+.card {
+    display: block;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: var(--main-color);
+    margin-top: 25px;
+    margin-bottom: 50px;
+    border-bottom-width: 5px;
+    border-bottom-color: var(--accent-color);
+}
+
+.card h3 {
+    color: var(--text-color);
+    background-color: var(--main-color);
+    margin-top: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+    font-family: var(--title-font);
+}
+
+.card p {
+    color: var(--accent-color);
+    font-family: var(--text-font);
+    font-weight: bold;
+}
+
+ul {
+    color: var(--secondary-color);
+    list-style: none;
+}
+
+footer {
+    background-color: var(--main-color);
+    width: 75%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer p {
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: 125%;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+#lastModified {
+    font-family: var(--title-font);
+}
