@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Play");
 
 :root {
-    --main-color: #3b4b9c;
+    --main-color: #374692;
     --secondary-color: #262d61;
     --accent-color: #FE7525;
-    --text-color: #fddbbf;
+    --text-color: #ffe6d1;
     --hover-color: #f9b089;
 
     --text-font: Comfortaa;
@@ -72,7 +72,7 @@ main {
 }
 
 main h2 {
-    color: var(--accent-color);
+    color: var(--main-color);
     font-family: var(--title-font);
     border-style: solid;
     border-width: 0 0 2px 0;
@@ -103,7 +103,7 @@ main h2 {
 }
 
 .card p {
-    color: var(--accent-color);
+    color: var(--secondary-color);
     font-family: var(--text-font);
     font-weight: bold;
 }
