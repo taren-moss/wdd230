@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@media screen and (min-width: 500px) {
+    header {
+        color: white;
+        background-color: black;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
