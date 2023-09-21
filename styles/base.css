@@ -124,7 +124,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: var(--main-color);
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     border-radius: 10px;
