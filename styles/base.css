@@ -5,48 +5,47 @@
     --secondary-color: #262d61;
     --accent-color: #FE7525;
     --text-color: #ffe6d1;
-    --hover-color: #f9b089;
+    --hover-color: #f9be9f;
 
     --text-font: Comfortaa;
     --title-font: Play;
 }
 
+body {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 header {
     background-color: var(--main-color);
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 100px 1fr 100px;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 header img {
-    width: 120px;
-    padding: 25px;
-    margin: 0 auto;
-    padding-right: 275px;
-    grid-column: 2/3;
-    grid-row: 1/2;
+    width: 100px;
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header h1 {
-    align-self: center;
-    padding: 25px;
-    font-size: 300%;
+    font-size: 200%;
     font-family: var(--title-font);
     color: var(--text-color);
-    margin: 0 auto;
-    padding-left: 225px;
-    grid-column: 2/3;
-    grid-row: 1/2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
 }
 
 nav {
     background-color: var(--secondary-color);
     text-align: center;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     height: 250px;
     display: grid;
@@ -67,7 +66,7 @@ nav a:hover {
 
 main {
     text-align: center;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -109,14 +108,23 @@ main h2 {
 }
 
 ul {
+    font-family: var(--text-font);
     color: var(--secondary-color);
-    list-style: none;
+    list-style: square;
+}
+
+li {
+    padding: 3px;
+    font-size: 0.75rem;
+    margin: 0 auto;
+    text-align: left;
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: var(--main-color);
     width: 75%;
-    height: 200px;
     margin: 0 auto;
     text-align: center;
     border-radius: 10px;
@@ -125,8 +133,8 @@ footer {
 footer p {
     color: var(--text-color);
     font-family: var(--text-font);
-    font-size: 125%;
-    padding: 25px;
+    font-size: 100%;
+    padding: 1rem;
     margin: 0 auto;
 }
 
