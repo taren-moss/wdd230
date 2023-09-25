@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Play");
+
+:root {
+    --main-color: #374692;
+    --secondary-color: #262d61;
+    --accent-color: #FE7525;
+    --text-color: #ffe6d1;
+    --hover-color: #f9be9f;
+
+    --text-font: Comfortaa, Arial;
+    --title-font: Play, Helvetica;
+}
+
+body {
+    margin: 0 auto;
+    align-content: center;
+}
+
+header {
+    background-color: var(--main-color);
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    height: 5rem;
+}
+
+header h1 {
+    color: var(--text-color);
+    font-family: var(--title-font);
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+main {
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+img {
+    width: 67%;
+}
+
+footer {
+    background-color: var(--main-color);
+    width: 80%;
+    margin: 0 auto;
+    height: 5rem;
+}
+
+footer h3 {
+    color: var(--text-color);
+    font-family: var(--text-font);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2rem;
+}
