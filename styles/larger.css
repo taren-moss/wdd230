@@ -1,5 +1,16 @@
 @media (min-width: 640px) {
 
+    :root {
+        --main-color: #374692;
+        --secondary-color: #262d61;
+        --accent-color: #FE7525;
+        --text-color: #ffe6d1;
+        --hover-color: #f9be9f;
+    
+        --text-font: Comfortaa, Arial;
+        --title-font: Play, Helvetica;
+    }
+
     header {
         display: flex;
         flex-direction: row;
@@ -22,15 +33,27 @@
         margin-top: auto;
         margin-bottom: auto;
     }
+
+    #menu {
+        display: none;
+    }
     
     nav {
-        display: flex;
-        height: 3rem;
+        background-color: var(--secondary-color);
     }
 
     nav a {
         flex: auto;
         flex-direction: row;
+    }
+
+    .navigation {
+        display: flex;
+        height: 3rem;
+    }
+
+    .navigation a {
+        text-decoration-line: none;
     }
 
     #cardSpace {
