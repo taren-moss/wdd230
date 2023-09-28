@@ -119,7 +119,7 @@ a:hover {
     color: var(--hover-color);
 }
 
-footer h3 {
+footer p {
     color: var(--text-color);
     font-family: var(--text-font);
     padding: 1rem;
