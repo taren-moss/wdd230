@@ -1,0 +1,91 @@
+@media (min-width: 640px) {
+
+    :root {
+        --main-color: #374692;
+        --secondary-color: #262d61;
+        --accent-color: #FE7525;
+        --text-color: #ffe6d1;
+        --hover-color: #f9be9f;
+    
+        --text-font: Comfortaa, Arial;
+        --title-font: Play, Helvetica;
+    }
+    
+    header h1 {
+        align-self: center;
+        padding: 2rem;
+        font-size: 250%;
+        font-family: var(--title-font);
+        color: var(--text-color);
+        margin: 0 auto;
+    }
+
+    #menu {
+        display: none;
+    }
+    
+    nav {
+        background-color: var(--secondary-color);
+    }
+
+    nav a {
+        flex: auto;
+        flex-direction: row;
+    }
+
+    .navigation {
+        display: flex;
+        height: 3rem;
+    }
+
+    .navigation a {
+        text-decoration-line: none;
+    }
+
+    #cardSpace {
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-gap: 1rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    ul {
+        font-family: var(--text-font);
+        color: var(--secondary-color);
+    }
+    
+    li {
+        font-size: 1rem;
+        margin: 0 auto;
+    }
+
+    footer p {
+        font-size: 125%;
+    }
+
+    #wireframe > div {
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 72% 26%;
+        grid-gap: 2%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #big-wire {
+        margin-left: auto;
+        margin-right: 0;
+        width: 97%;
+    }
+    
+    #small-wire {
+        margin-right: auto;
+        margin-left: 0;
+        width: 90%;
+    }
+}
