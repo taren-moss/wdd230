@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Gabarito|Titillium+Web");
+
+:root {
+    --main-color: #683571;
+    --secondary-color: #512466;
+    --accent-color: #f4a321;
+    --text-color: #ffe78e;
+    --hover-color: #ffc86a;
+    --background-color: #38175a;
+    --shadow-color: rgb(56, 23, 90, 0.75);
+
+    --text-font: 'Titillium Web', Arial;
+    --title-font: Gabarito, Helvetica;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+nav {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-small {
+    background-color: var(--secondary-color);
+    display: none;
+    text-align: center;
+}
+
+.nav-small a {
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: 3vh;
+    text-decoration: none;
+    border-bottom-width: 2px;
+    padding: 2vh;
+}
+
+#menu {
+    background-color: var(--main-color);
+    margin: 0 auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 42vw;
+    padding-right: 42vw;
+}
+
+#menu::before {
+    color: var(--text-color);
+    font-size: 3vh;
+    content: '≡';
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu.show::before {
+    color: var(--text-color);
+    font-size: 3vh;
+    content: '✖';
+}
+
+.nav-top {
+    display: none;
+}
+
+.nav-bottom {
+    background-color: var(--secondary-color);
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+
+.nav-bottom a {
+    display: none;
+}
+
+.nav-top a, .nav-bottom a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: var(--text-font);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-top a:hover, .nav-bottom a:hover {
+    color: var(--hover-color);
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-style: dotted;
+    border-color: var(--accent-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.hero {
+    display: grid;
+    grid-template-rows: 15% 35% 35% 15%;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+.hero > img {
+    content: url(../images/coast_small.webp);
+    aspect-ratio: auto;
+    margin: 0 auto;
+    width: 100%;
+    grid-row: 1/5;
+    grid-column: 1/4;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.hero > h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5vw;
+    font-family: var(--title-font);
+    color: var(--text-color);
+    padding: 1vh;
+    margin-top: 10vw;
+    background-color: var(--main-color);
+    box-shadow: 0vh 0vh 4vw 2vw var(--shadow-color);
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.hero > a {
+    font-size: 4vw;
+    margin: 0 auto;
+    padding: 2vw;
+    margin-bottom: 12vw;
+    color: var(--text-color);
+    background-color: var(--main-color);
+    font-family: var(--text-font);
+    font-weight: bolder;
+    box-shadow: 0vh 0vh 2vw 1vw var(--shadow-color);
+    text-decoration: none;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.hero > a:hover {
+    color: var(--hover-color);
+}
+
+.weatherspace, .spotlightspace {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    margin-bottom: 4vh;
+}
+
+.eventspace {
+    margin-bottom: 4vh;
+}
+
+.weatherspace > div {
+    background-color: var(--secondary-color);
+}
+
+.eventspace > div {
+    display: grid;
+    grid-gap: 2vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--secondary-color);
+    height: 30vh;
+    border-style: solid;
+    border-width: 4px;
+    border-color: var(--main-color);
+    border-bottom-color: var(--accent-color);
+}
+
+.weatherspace > div .card {
+    height: 35vh;
+}
+
+.spotlightspace > div .card {
+    height: 20vh;
+    margin-bottom: 2vh;
+}
+
+.card > h3 {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-family: var(--title-font);
+    font-size: 4vw;
+    margin: 0 auto;
+    padding: 1vh;
+    padding-bottom: 2vh;
+    text-align: center;
+}
+
+.card > p {
+    color: var(--text-color);
+    font-family: var(--text-font);
+    text-align: center;
+}
+
+.label {
+    color: var(--text-color);
+    font-family: var(--title-font);
+    background-color: var(--main-color);
+    margin: 0 auto;
+    text-align: center;
+    padding: 2vh;
+    width: 50vw;
+    margin-top: 3vh;
+    margin-bottom: 2vw;
+    font-size: 5vw;
+}
+
+footer {
+    color: var(--text-color);
+    background-color: var(--main-color);
+    margin-top: 2vw;
+    padding: 1vw;
+    text-align: center;
+}
+
+footer h3 {
+    font-weight: 400;
+    font-family: var(--title-font);
+}
+
+footer p {
+    font-family: var(--text-font);
+}

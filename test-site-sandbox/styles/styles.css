@@ -1,11 +1,5 @@
-body {
-    background-color: bisque;
-}
-
-ul > li {
-    color: blue;
-}
-
-li {
-    color: red;
-}
+.gg {
+    display: grid;
+    align-items: center;
+    text-align: center;
+  }

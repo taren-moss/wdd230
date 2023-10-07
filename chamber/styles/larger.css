@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Gabarito|Titillium+Web");
+
+@media (min-width: 1000px) {
+    :root {
+        --main-color: #683571;
+        --secondary-color: #512466;
+        --accent-color: #f4a321;
+        --text-color: #ffe78e;
+        --hover-color: #ffc86a;
+        --background-color: #38175a;
+        --shadow-color: rgb(56, 23, 90, 0.75);
+
+        --text-font: 'Titillium Web', Arial;
+        --title-font: Gabarito, Helvetica;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hero > img {
+        content: url(../images/coast.webp);
+    }
+
+    .weatherspace {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .eventspace > div > .card {
+        height: 40vh;
+    }
+
+    .weatherspace > div > .card {
+        height: 87vh;
+    }
+
+    .eventspace {
+        grid-row: 2/3;
+        grid-column: 2/4;
+    }
+
+    .spotlightspace {
+        grid-row: 3/4;
+        grid-column: 1/4;
+    }
+}
