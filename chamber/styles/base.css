@@ -7,6 +7,8 @@
     --text-color: #ffe78e;
     --hover-color: #ffc86a;
     --background-color: #38175a;
+    --slider-color: #ffe78e;
+    --slider-background: #f4a321;
     --shadow-color: rgb(56, 23, 90, 0.75);
 
     --text-font: 'Titillium Web', Arial;
@@ -45,6 +47,7 @@ nav {
     padding-bottom: 2vh;
     padding-left: 42vw;
     padding-right: 42vw;
+    text-decoration: none;
 }
 
 #menu::before {
@@ -240,4 +243,78 @@ footer h3 {
 
 footer p {
     font-family: var(--text-font);
+}
+
+/** Slider **/
+/* The switch - the box around the slider */
+.switchbox {
+    margin-top: 7.5vh;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    height: 250vh;
+}
+
+.switch {
+  position: sticky;
+  display: inline-block;
+  width: 40px;
+  height: 23px;
+  top: 10px;
+  right: 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--slider-background);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--slider-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--slider-background);
+}
+
+input:checked + .slider:before {
+    background-color: var(--slider-color);
+  }
+
+input:focus + .slider {
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+input:checked + .slider {
+    box-shadow: 0 0 10px var(--shadow-color);
+  }
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(17px);
+  -ms-transform: translateX(17px);
+  transform: translateX(17px);
 }
