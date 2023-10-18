@@ -56,6 +56,11 @@
         text-decoration-line: none;
     }
 
+    #overlay {
+        font-size: 150%;
+        width: auto;
+    }
+
     #cardSpace {
         width: 95%;
         margin: 0 auto;

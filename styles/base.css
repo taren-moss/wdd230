@@ -108,6 +108,46 @@ main {
     margin: 0 auto;
 }
 
+.hero {
+    display: grid;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+}
+
+#overlay {
+    z-index: 1;
+    margin: 0 auto;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--secondary-color);
+    font-family: var(--title-font);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--main-color);
+    font-size: 100%;
+    opacity: 80%;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    width: auto;
+    align-self: center;
+    font-size: 90%;
+    margin-bottom: 0.5rem;
+}
+
+picture {
+    grid-row: 1/4;
+    grid-column: 1/4;
+}
+
+picture img{
+    width: 100%;
+    height: auto;
+}
+
 main h2 {
     color: var(--main-color);
     font-family: var(--title-font);

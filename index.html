@@ -7,7 +7,7 @@
     <meta name="author" content="Taren Moss">
     <meta property="og:title" content="Taren Moss - WDD 230">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/gd0zjgp9jbkmi9aw8n8n/depositphotos_6100170_l">
+    <meta property="og:image" content="https://taren-moss.github.io/wdd230/images/preview.webp">
     <meta property="og:url" content="https://taren-moss.github.io/wdd230/">
     <title>Taren Moss - WDD 230 - Web Frontend Development</title>
     <link rel="stylesheet" href="styles/normalize.css">
@@ -17,7 +17,7 @@
 </head>
 <body>
     <header>
-        <img src="images/me.JPG" alt="A picture of me">
+        <img src="images/me.webp" alt="a picture of me">
         <h1>Taren Moss</h1>
     </header>
     <nav>
@@ -31,6 +31,14 @@
         </div>
     </nav>
     <main>
+        <div class="hero">
+            <h3 id="overlay">Portland Oregon Temple</h3>
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/temple-small.webp">
+                <source media="(max-width: 640px)" srcset="images/temple-medium.webp">
+                <img src="images/temple-large.webp" alt="hero image" width="960" height="600">
+            </picture>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <div id="cardSpace">
             <section class="card">
