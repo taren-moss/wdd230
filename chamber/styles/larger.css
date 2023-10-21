@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Gabarito|Titillium+Web");
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     :root {
         --main-color: #683571;
         --secondary-color: #512466;
@@ -19,11 +19,14 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .hero > img {
-        content: url(../images/coast.webp);
+    .hero > a {
+        font-size: 3vw;
+        padding: 3vh;
+        margin-bottom: 5vw;
     }
 
     .weatherspace {
+        font-size: 150%;
         grid-row: 2/3;
         grid-column: 1/2;
     }
@@ -44,5 +47,17 @@
     .spotlightspace {
         grid-row: 3/4;
         grid-column: 1/4;
+    }
+
+    footer {
+        grid-template-columns: 3fr 2fr 4fr 3fr;
+    }
+
+    .footer-info h3 {
+        font-size: 110%;
+    }
+    
+    .footer-info p {
+        font-size: 110%;
     }
 }

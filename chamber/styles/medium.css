@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Gabarito|Titillium+Web");
 
-@media (min-width: 640px) {
+@media (min-width: 600px) {
     :root {
         --main-color: #683571;
         --secondary-color: #512466;
@@ -20,7 +20,7 @@
 
     nav {
         display: grid;
-        grid-template-rows: 12vh 8vh;
+        grid-template-rows: 10vh 6vh;
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0 auto;
     }
@@ -64,17 +64,12 @@
     }
 
     .hero {
-        grid-template-rows: 12vh 24vh 24vh 16vh;
+        grid-template-rows: 1fr 2fr 2fr 1fr;
         grid-template-columns: 1fr 3fr 1fr;
     }
 
-    .hero > img {
-        content: url(../images/coast_medium.webp);
-        height: 72vh;
-    }
-
     .hero > h1 {
-        font-size: 5vh;
+        font-size: 3vw;
         padding: 1vw;
         margin-top: 5vw;
         background-color: var(--main-color);
@@ -82,9 +77,13 @@
     }
 
     .hero > a {
-        font-size: 4vh;
-        padding: 2vh;
+        font-size: 2.5vw;
+        padding: 2.5vh;
         margin-bottom: 5vw;
+    }
+
+    .weatherspace {
+        font-size: 135%;
     }
 
     .weatherspace, .eventspace, .spotlightspace {
@@ -137,9 +136,27 @@
         font-size: 1.8vw;
     }
 
+    footer {
+        grid-template-columns: 4fr 2fr 4fr 4fr;
+    }
+
+    #logo > img {
+        width: 100px;
+        height: auto;
+        padding: 5px;
+    }
+    
+    .footer-info h3 {
+        font-size: 90%;
+    }
+    
+    .footer-info p {
+        font-size: 90%;
+    }
+
     /** Slider **/
     .switchbox {
-        margin-top: 12.5vh;
+        margin-top: 9.5vh;
     }
 
     .switch {

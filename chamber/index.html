@@ -44,7 +44,11 @@
     </header>
     <main>
         <div class="hero">
-            <img src="images/coast.webp" alt="Oregon Northwest Coast">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/wdd230-small.webp">
+                <source media="(max-width: 900px)" srcset="images/wdd230-medium.webp">
+                <img src="images/wdd230.webp" alt="Oregon Northwest Coast" width="1600" height="670">
+            </picture>
             <h1>Northwest Oregon Chamber of Commerce</h1>
             <a href="#" id="call">Join the Chamber!</a>
         </div>
@@ -53,7 +57,9 @@
             <div>
                 <section class="card weather">
                     <h3>[Location]</h3>
-                    <p>[Weather info goes here]</p>
+                    <p id="temp">Temperature: 42°F</p>
+                    <p id="wind">Wind Speed: 16.2 MPH</p>
+                    <p id="windchill"></p>
                 </section>
             </div>
         </div>
@@ -97,12 +103,18 @@
         </div>
     </main>
     <footer>
-        <h3>Taren D. Moss</h3>
-        <p>This website is a project for WDD230</p>
-        <p id="lastModified"></p>
+        <div id="logo">
+            <img src="images/logo.webp" alt="logo">
+        </div>
+        <div class="footer-info">
+            <h3>Taren D. Moss</h3>
+            <p>This website is a project for WDD230</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/getdates.js"></script>
 <script src="scripts/themetoggle.js"></script>
+<script src="scripts/windchill.js"></script>
 </body>
 </html>
