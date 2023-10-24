@@ -11,7 +11,7 @@ function DisplayList(item) {
     const listElement = document.createElement('li');
     const deleteButton = document.createElement('button');
     listElement.textContent = item;
-    listElement.innerHTML = `<a href="https://www.churchofjesuschrist.org/search?lang=eng&query=${filter}&page=1&facet=scriptures" target="_blank">${input.value}</a>`
+    listElement.innerHTML = `<a href="https://www.churchofjesuschrist.org/search?lang=eng&query=${filter}&page=1&facet=scriptures" target="_blank">${item}</a>`
     deleteButton.textContent = '❌';
 
     listElement.append(deleteButton);
@@ -34,14 +34,14 @@ function SetChapterList() {
 
 function DeleteChapter(chapter) {
     chapter = chapter.slice(0, chapter.length - 1)
-    chaptersArray = chaptersArray.filter(item => item !== chapter);
+    chaptersArray = chaptersArray.filter((item) => item != chapter);
     SetChapterList();
 }
 
-function AddChapter(inputValue) {
-    if (inputValue != '') {
-        DisplayList(inputValue);
-        chaptersArray.push(inputValue);
+function AddChapter() {
+    if (input.value != '') {
+        DisplayList(input.value);
+        chaptersArray.push(input.value);
         SetChapterList();
         input.value = '';
         input.focus();
