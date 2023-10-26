@@ -220,3 +220,7 @@ footer p {
 #lastModified {
     font-family: var(--title-font);
 }
+
+iframe {
+    border: 0;
+}
