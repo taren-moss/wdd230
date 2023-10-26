@@ -44,16 +44,21 @@ header h1 {
 }
 
 #menu {
+    width: 100%;
+    background-color: var(--secondary-color);
     display: grid;
     margin: 0 auto;
     text-align: center;
-    padding: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     text-decoration-line: none;
+    border: none;
 }
 
 #menu::before {
     color: var(--text-color);
     content: '≡';
+    font-size: 150%;
 }
 
 #current {
@@ -100,6 +105,8 @@ nav a:hover {
 
 #menu.show::before {
     content: '✖';
+    font-size: 120%;
+    padding-top: 0.3rem;
 }
 
 main {
