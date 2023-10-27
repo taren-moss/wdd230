@@ -284,10 +284,17 @@ footer {
     justify-content: center;
 }
 
-#discoverh1 {
-    
-    font-size: 180%;
-    width: 65vw;
+.discover > h1 {
+    color: var(--text-color);
+    font-family: var(--title-font);
+    background-color: var(--main-color);
+    margin: 0 auto;
+    text-align: center;
+    padding: 2vh;
+    width: 60vw;
+    margin-top: 3vh;
+    margin-bottom: 2vw;
+    font-size: 150%;
 }
 
 .discover .card {
