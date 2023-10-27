@@ -196,6 +196,10 @@ main {
     border-bottom-color: var(--accent-color);
 }
 
+.card p {
+    padding: 5px;
+}
+
 .weatherspace > div .card {
     height: 35vh;
 }
@@ -274,8 +278,28 @@ footer {
     font-size: 80%;
 }
 
+/** Discover Page **/
+.discover {
+    padding: 2rem;
+}
+
+.discover .card {
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.discover-images img {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+#calendar {
+    width: 100%;
+    height: auto;
+}
+
 /** Slider **/
-/* The switch - the box around the slider */
 .switchbox {
     margin-top: 7.5vh;
     position: absolute;
@@ -294,14 +318,12 @@ footer {
   right: 10px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
