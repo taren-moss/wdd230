@@ -281,6 +281,13 @@ footer {
 /** Discover Page **/
 .discover {
     padding: 2rem;
+    justify-content: center;
+}
+
+#discoverh1 {
+    
+    font-size: 180%;
+    width: 65vw;
 }
 
 .discover .card {
