@@ -1,5 +1,3 @@
-.gg {
-    display: grid;
-    align-items: center;
-    text-align: center;
-  }
+input:valid {
+  background-color: blue;
+}
