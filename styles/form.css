@@ -13,11 +13,14 @@
 
 div {
     margin: 2rem;
-    padding: 2rem;
     border-style: solid;
     border-color: var(--main-color);
     border-radius: 1rem;
     align-items: center;
+}
+
+form {
+    margin: 1rem;
 }
 
 label {
@@ -26,6 +29,7 @@ label {
     font-family: var(--title-font);
     font-weight: bold;
     padding-top: 1rem;
+    width: 100%;
 }
 
 label > p {
@@ -36,8 +40,8 @@ input {
     display: block;
     font-family: var(--text-font);
     font-size: 0.8rem;
-    padding: 0.7rem;
-    width: 100%;
+    padding: 0.7rem 0.5rem;
+    width: 89%;
     max-width: 20rem;
     border-color: var(--main-color);
     border-radius: var(--input-radius);
