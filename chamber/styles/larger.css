@@ -60,4 +60,49 @@
     .footer-info p {
         font-size: 110%;
     }
+
+    /** Join Page **/
+    .join {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 3fr 3fr;
+    }
+
+    .join-info p{
+        font-size: 110%;
+    }
+
+    ul {
+        font-size: 100%;
+    }
+
+    form legend {
+        font-size: 120%;
+    }
+
+    form label, form div {
+        font-size: 135%;
+    }
+
+    .membership {
+        font-size: 120%;
+        padding-top: 0;
+        padding-bottom: 1rem;
+        margin-left: 2rem;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], textarea {
+        display: block;
+        padding: 0.7rem;
+        width: 90%;
+        max-width: 25rem;
+        margin-bottom: 1.6rem;
+        border: none;
+        outline: none;
+    }
+
+    button {
+        width: 50%;
+        max-width: 15rem;
+    }
 }

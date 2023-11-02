@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Northwest Oregon Chamber of Commerce is for learning and developing business skills and facilitating collaboration and shared growth between local businesses.">
+    <meta name="author" content="Taren Moss">
+    <meta property="og:title" content="Northwest Oregon Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://taren-moss.github.io/wdd230/chamber/images/preview.jpg">
+    <meta property="og:url" content="https://taren-moss.github.io/wdd230/chamber/index.html">
+    <title>Northwest Oregon Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <a id="menu" href="#" aria-label="menu"></a>
+            <div class="nav-small">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+            </div>
+            <div class="nav-top">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="#">Directory</a>
+                <a href="#">Join</a>
+            </div>
+            <div class="nav-bottom">
+            </div>
+        </nav>
+        <div class="switchbox">
+            <label class="switch">
+                <input type="checkbox" id="theme-switch" aria-label="Dark/Light Theme Switch">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </header>
+    <main>
+        <div class="join">
+            <h1>Join the Chamber!</h1>
+            <div class="join-info">
+                <h2 class="label">Membership Info</h2>
+                <section class="card">
+                    <h3>Non Profit Membership</h3>
+                    <p>Non Profit Membership has no cost</p>
+                    <ul>
+                        <li>Gain access to local news</li>
+                        <li>Find information about local events</li>
+                        <li>Collaborate with other businesses</li>
+                    </ul>
+                </section>
+                <section class="card">
+                    <h3>Bronze Membership</h3>
+                    <p>Bronze Membership costs $80 per Year</p>
+                    <ul>
+                        <li>Access to local news</li>
+                        <li>Get information about local events</li>
+                        <li>Collaborate with other businesses</li>
+                        <li>Gain access to basic business training</li>
+
+                    </ul>
+                </section>
+                <section class="card">
+                    <h3>Silver Membership</h3>
+                    <p>Silver Membership costs $145 per Year</p>
+                    <ul>
+                        <li>Gain access to local news</li>
+                        <li>Find information about local events</li>
+                        <li>Collaborate with other businesses</li>
+                        <li>Gain access to basic business training</li>
+                        <li>Gain access to advanced business training</li>
+                        <li>Gain access to exclusive events</li>
+                    </ul>
+                </section>
+                <section class="card">
+                    <h3>Gold Membership</h3>
+                    <p>Gold Membership costs $275 per Year</p>
+                    <ul>
+                        <li>Gain access to local news</li>
+                        <li>Find information about local events</li>
+                        <li>Collaborate with other businesses</li>
+                        <li>Gain access to basic business training</li>
+                        <li>Gain access to advanced business training</li>
+                        <li>Gain a 25% discount on all business training</li>
+                        <li>Gain access to exclusive events</li>
+                        <li>Gain a place in the Company Spotlights</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="join-form">
+                <h2 class="label">Sign Up</h2>
+                <section class="card">
+                    <h3>Sign-up Form</h3>
+                    <form method="get" action="thankyou.html">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <label>First Name*<input type="text" id="firstName" name="firstName" autocomplete="off" required></label>
+                            <label>Last Name*<input type="text" id="lastName" name="lastName" autocomplete="off" required></label>
+                            <label>Job Title or Position<input type="text" pattern="[a-zA-Z_-]" id="jobTitle" name="jobTitle" autocomplete="off" ></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            <label>Email*<input type="email" id="email" placeholder="example@gmail.com" name="email" autocomplete="email" required></label>
+                            <label>Mobile Number*<input type="tel" id="phone" name="phone" autocomplete="tel" required></label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Company Information</legend>
+                            <label>Business/Organization*<input type="text" id="businessName" name="businessName" autocomplete="off"  required></label>
+                            <div>Membership Level</div>
+                                <label class="membership"><input type="radio" name="membership" value="nonprofit"> Non Profit Membership</label>
+                                <label class="membership"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                                <label class="membership"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                                <label class="membership"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                            <label class="businessDescription">Description<textarea id="businessDesc" name="businessDesc"></textarea></label>
+                        </fieldset>
+                        <input type="hidden" id="date" name="date">
+                        <div class="button-div">
+                            <button type="submit">Join The Chamber!</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="logo">
+            <img src="images/logo.webp" alt="logo" height="100" width="100">
+        </div>
+        <div class="footer-info">
+            <h3>Taren D. Moss</h3>
+            <p>This website is a project for WDD230</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+<script src="scripts/hamburger.js"></script>
+<script src="scripts/getdates.js"></script>
+<script src="scripts/themetogglesubpage.js"></script>
+</body>
+</html>
