@@ -1,0 +1,28 @@
+{
+    "familyName": "Family",
+    "moveInDate": "9/21/2021",
+    "recordCount": 4,
+    "visited": false,
+    "familyMembers": [
+        {
+            "name": "Father",
+            "gender": "Male",
+            "birthDate": "11/19/1981"
+        },
+        {
+            "name": "Mother",
+            "gender": "Female",
+            "birthDate": "9/17/1979"
+        },
+        {
+            "name": "Child1",
+            "gender": "Male",
+            "birthDate": "8/11/2018"
+        },
+        {
+            "name": "Child2",
+            "gender": "Female",
+            "birthDate": "5/10/2015"
+        }
+    ]
+}

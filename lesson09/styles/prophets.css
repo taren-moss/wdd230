@@ -1,0 +1,52 @@
+:root {
+    --card-background: #fff5cc;
+    --card-outline: #f7bc36;
+    --card-title: #862c08;
+    --title-font: Papyrus;
+    --text-font: times;
+    background-color: #fff7eb;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--title-font);
+    font-weight: bolder;
+    color: var(--card-title);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: auto;
+    text-align: center;
+}
+
+section {
+    background-color: var(--card-background);
+    outline-color: var(--card-outline);
+    outline-style: solid;
+    height: auto;
+    width: auto;
+    margin: 0.5rem;
+}
+
+section:hover {
+    transform: scale(1.01);
+        transition-duration: 0.05s;
+}
+
+section h2 {
+    font-family: var(--title-font);
+    color: var(--card-title);
+}
+
+section p {
+    font-family: var(--text-font);
+}
+
+section img {
+    width: 80%;
+    height: auto;
+    padding: 0.5rem;
+    padding-bottom: 1.5rem;
+}
