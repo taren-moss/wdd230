@@ -13,7 +13,7 @@
             "lesson": "02",
             "links": [
                 {
-                    "title": "Design Principles Practice",
+                    "title": "Design Practice",
                     "url": "lesson02/design.html"
                 },
                 {
@@ -21,7 +21,7 @@
                     "url": "lesson02/media-query.html"
                 },
                 {
-                    "title": "Design Principles Document",
+                    "title": "Design Document",
                     "url": "lesson02/design-principles.html"
                 }
             ]
@@ -30,19 +30,19 @@
             "lesson": "03",
             "links": [
                 {
-                    "title": "CSS Combinators",
+                    "title": "Combinators",
                     "url": "lesson03/css-combinators.html"
                 },
                 {
-                    "title": "Pseudo Elements Codepen",
+                    "title": "Pseudo Elements",
                     "url": "https://codepen.io/Rainbowcraft-2/pen/OJrZNoO"
                 },
                 {
-                    "title": "Responsive Codepen",
+                    "title": "Responsive",
                     "url": "https://codepen.io/Rainbowcraft-2/pen/VwqxjYb"
                 },
                 {
-                    "title": "Chamber Site Plan",
+                    "title": "Site Plan",
                     "url": "lesson03/chamber-site-plan.html"
                 }
             ]
@@ -70,7 +70,7 @@
             "links": [
                 {
                     "title": "Optimized Landscape Image",
-                    "url": "lesson06/landscape.webp"
+                    "url": "lesson06/images/landscape.webp"
                 },
                 {
                     "title": "Responsive Images",
