@@ -1,0 +1,125 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "title": "Holy Grail",
+                    "url": "lesson01/holygrail.html"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "title": "Design Principles Practice",
+                    "url": "lesson02/design.html"
+                },
+                {
+                    "title": "Media Queries",
+                    "url": "lesson02/media-query.html"
+                },
+                {
+                    "title": "Design Principles Document",
+                    "url": "lesson02/design-principles.html"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "title": "CSS Combinators",
+                    "url": "lesson03/css-combinators.html"
+                },
+                {
+                    "title": "Pseudo Elements Codepen",
+                    "url": "https://codepen.io/Rainbowcraft-2/pen/OJrZNoO"
+                },
+                {
+                    "title": "Responsive Codepen",
+                    "url": "https://codepen.io/Rainbowcraft-2/pen/VwqxjYb"
+                },
+                {
+                    "title": "Chamber Site Plan",
+                    "url": "lesson03/chamber-site-plan.html"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "title": "Pseudo Class Codepen",
+                    "url": "https://codepen.io/Rainbowcraft-2/pen/OJroWGQ"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "title": "Book of Mormon Top 10",
+                    "url": "lesson05/bom.html"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "title": "Optimized Landscape Image",
+                    "url": "lesson06/landscape.webp"
+                },
+                {
+                    "title": "Responsive Images",
+                    "url": "lesson06/responsive-images.html"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "title": "Lazy Loading",
+                    "url": "lesson07/lazyload.html"
+                },
+                {
+                    "title": "Book of Mormon Top 10 v2",
+                    "url": "lesson07/bom.html"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "title": "HTML Tables",
+                    "url": "lesson08/tablebuild.html"
+                },
+                {
+                    "title": "HTML Forms",
+                    "url": "form-start/index.html"
+                },
+                {
+                    "title": "Form Assignment",
+                    "url": "form.html"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "title": "Ward Members JSON",
+                    "url": "lesson09/new-ward-members.json"
+                },
+                {
+                    "title": "Prophets Fetch API",
+                    "url": "lesson09/prophets.html"
+                }
+            ]
+        }
+    ]
+}
