@@ -61,6 +61,10 @@
         font-size: 110%;
     }
 
+    h1 {
+        grid-column: 1/4;
+    }
+
     /** Join Page **/
     .join {
         display: grid;
@@ -104,5 +108,17 @@
     button {
         width: 50%;
         max-width: 15rem;
+    }
+
+    /** Directory Page **/
+    .directory {
+        grid-column: 1/4;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+
+    .directory > .card > img {
+        margin: 1rem;
+        width: 320px;
+        height: auto;
     }
 }

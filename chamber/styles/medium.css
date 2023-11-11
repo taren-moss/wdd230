@@ -155,6 +155,11 @@
     }
 
     /** Discover Page **/
+    .discover, .join, .thanks, .directory {
+        padding: 2rem;
+        justify-content: center;
+    }
+
     .discover {
         display: grid;
         grid-template-rows: auto auto;
@@ -163,7 +168,7 @@
         grid-column: 1/4;
     }
 
-    .discover > h1, .join > h1 {
+    h1 {
         width: 30rem;
         font-size: 250%;
         grid-row: 1/2;
@@ -272,6 +277,52 @@
     .thanks {
         margin: 0 auto;
         grid-column: 1/4;
+    }
+
+    /** Directory Page **/
+    h2.label {
+        grid-column: 1/4;
+    }
+
+    .directory {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        grid-gap: 2rem;
+        text-align: center;
+    }
+
+    .directory > .card {
+        margin-bottom: 0;
+    }
+
+    .directory > .card > img {
+        margin-top: 0.5rem;
+        width: 240px;
+        height: auto;
+    }
+
+    .directory a:hover {
+        color: var(--hover-color);
+    }
+
+    .directory > .card:hover {
+        transform: scale(1.025);
+        transition-duration: 0.1s;
+    }
+
+    .directory li {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 3fr;
+        text-align: left;
+        vertical-align: center;
+        background-color: var(--secondary-color);
+        padding: 1rem;
+    }
+
+    .directory li a {
+        padding-top: 0.4rem;
     }
 
     /** Slider **/

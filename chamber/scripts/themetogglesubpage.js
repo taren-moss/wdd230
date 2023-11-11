@@ -2,7 +2,6 @@ const themeSwitch = document.querySelector('.switch');
 const themeValue = document.querySelector('#theme-switch');
 const card = document.querySelectorAll('.card');
 const label = document.querySelectorAll('.card > h3');
-const call = document.querySelector('#call');
 const h1 = document.querySelector('h1');
 var root = document.querySelector(`:root`);
 
@@ -18,10 +17,10 @@ themeSwitch.addEventListener('click', () => {
         root.style.setProperty('--slider-background', '#38175a');
         root.style.setProperty('--shadow-color', 'rgb(244, 163, 33, 0.75)');
 
-        card.forEach((i) => (i.style.setProperty('background-color', 'var(--main-color)')));
-        card.forEach((i) => (i.style.setProperty('border-color', 'var(--secondary-color)')));
-        card.forEach((i) => (i.style.setProperty('border-bottom-color', 'var(--accent-color)')));
-        label.forEach((i) => (i.style.setProperty('background-color', 'var(--secondary-color)')));
+        card.forEach((i) => (i.style['background-color'] = 'var(--main-color)'));
+        card.forEach((i) => (i.style['border-color'] = 'var(--secondary-color)'));
+        card.forEach((i) => (i.style['border-bottom-color'] = 'var(--accent-color)'));
+        label.forEach((i) => (i.style['background-color'] = 'var(--secondary-color)'));
     }
     else {
         root.style.setProperty('--main-color', '#683571');
@@ -34,9 +33,9 @@ themeSwitch.addEventListener('click', () => {
         root.style.setProperty('--slider-background', '#f4a321');
         root.style.setProperty('--shadow-color', 'rgb(56, 23, 90, 0.75)');
         
-        card.forEach((i) => (i.style.setProperty('background-color', 'var(--secondary-color)')));
-        card.forEach((i) => (i.style.setProperty('border-color', 'var(--main-color)')));
-        card.forEach((i) => (i.style.setProperty('border-bottom-color', 'var(--accent-color)')));
-        label.forEach((i) => (i.style.setProperty('background-color', 'var(--main-color)')));
+        card.forEach((i) => (i.style['background-color'] = 'var(--secondary-color)'));
+        card.forEach((i) => (i.style['border-color'] = 'var(--main-color)'));
+        card.forEach((i) => (i.style['border-bottom-color'] = 'var(--accent-color)'));
+        label.forEach((i) => (i.style['background-color'] = 'var(--main-color)'));
     }
 })

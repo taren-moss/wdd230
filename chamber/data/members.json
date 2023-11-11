@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name": "Costco",
+            "address": "1804 SE Ensign Ln, Warrenton",
+            "phone": "(503) 338-4103",
+            "url": "https://www.costco.com/",
+            "img": "images/companies/costco.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "Tillamook Creamery",
+            "address": "4165 N Hwy 101, Tillamook",
+            "phone": "(503) 815-1300",
+            "url": "https://www.tillamook.com/visit-us/creamery",
+            "img": "images/companies/tillamook.webp",
+            "membership": "gold"
+        },
+        {
+            "name": "Northwest Youth Corps",
+            "address": "2621 Augusta St, Eugene",
+            "phone": "(541) 349-5055",
+            "url": "https://www.nwyouthcorps.org/",
+            "img": "images/companies/nyc.webp",
+            "membership": "silver"
+        },
+        {
+            "name": "Wendy's",
+            "address": " 2375 Commercial St SE, Salem",
+            "phone": "(503) 362-4031",
+            "url": "https://www.wendys.com/",
+            "img": "images/companies/wendys.png",
+            "membership": "silver"
+        },
+        {
+            "name": "Mo's Seafood & Chowder",
+            "address": "30 N Prom, Seaside",
+            "phone": "(503) 717-5757",
+            "url": "https://www.moschowder.com/",
+            "img": "images/companies/mos.webp",
+            "membership": "bronze"
+        },
+        {
+            "name": "Dairy Queen",
+            "address": "843 W Marine Dr, Astoria",
+            "phone": "(503) 325-8205",
+            "url": "https://www.dairyqueen.com/en-us/",
+            "img": "images/companies/dq.webp",
+            "membership": "bronze"
+        },
+        {
+            "name": "RGB Pixels",
+            "address": "777 Rainbow Road, Madeup City",
+            "phone": "(503) RGB-PXLS",
+            "url": "https://taren-moss.github.io/wdd130/rgb-pixels/index.html",
+            "img": "images/companies/rgb.png",
+            "membership": "nonprofit"
+        }
+    ]
+}
