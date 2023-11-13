@@ -1,7 +1,7 @@
 const list = document.querySelector("ul");
 
 const baseURL = "https://taren-moss.github.io/wdd230/";
-const linksURL = "https://taren-moss.github.io/wdd230/data/links.json";
+const linksURL = "data/links.json";
 
 async function GetLinks() {
     const response = await fetch(linksURL);
