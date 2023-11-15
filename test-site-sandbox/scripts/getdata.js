@@ -1,9 +1,9 @@
 const url = 'data/superheroes.json'
 
-async function GetData() {
-    const response = await fetch(`https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json`);
+async function GetData(input) {
+    const response = await fetch(input);
     const data = await response.json();
-    console.log(data);
+    console.log(data.members[2].powers[1]);
 }
 
-GetData();
+GetData(url);

@@ -175,8 +175,16 @@ main {
     margin-bottom: 4vh;
 }
 
-.weatherspace > div {
-    background-color: var(--secondary-color);
+.weather p {
+    margin: 0.5rem;
+}
+
+.weather img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 75px;
+    height: auto;
 }
 
 .eventspace > div {
@@ -189,24 +197,17 @@ main {
 
 .card {
     background-color: var(--secondary-color);
-    height: 30vh;
+    height: auto;
+    min-height: 30vh;
     border-style: solid;
     border-width: 4px;
     border-color: var(--main-color);
     border-bottom-color: var(--accent-color);
+    margin-bottom: 2rem;
 }
 
 .card p {
     padding: 5px;
-}
-
-.weatherspace > div .card {
-    height: 35vh;
-}
-
-.spotlightspace > div .card {
-    height: 20vh;
-    margin-bottom: 2vh;
 }
 
 .card > h3 {
@@ -295,11 +296,6 @@ h1 {
     margin-top: 3vh;
     margin-bottom: 2vw;
     font-size: 150%;
-}
-
-.discover .card, .join .card, .directory .card {
-    height: auto;
-    margin-bottom: 2rem;
 }
 
 .discover-images img {
