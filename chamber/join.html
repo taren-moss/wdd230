@@ -103,12 +103,12 @@
                             <legend>Personal Information</legend>
                             <label>First Name*<input type="text" id="firstName" name="firstName" autocomplete="off" required></label>
                             <label>Last Name*<input type="text" id="lastName" name="lastName" autocomplete="off" required></label>
-                            <label>Job Title or Position<input type="text" pattern="[a-zA-Z_-]" id="jobTitle" name="jobTitle" autocomplete="off" ></label>
+                            <label>Job Title or Position<input type="text" pattern="[a-zA-Z\s]{7,}" id="jobTitle" name="jobTitle" autocomplete="off"></label>
                         </fieldset>
                         <fieldset>
                             <legend>Contact Information</legend>
                             <label>Email*<input type="email" id="email" placeholder="example@gmail.com" name="email" autocomplete="email" required></label>
-                            <label>Mobile Number*<input type="tel" id="phone" name="phone" autocomplete="tel" required></label>
+                            <label>Mobile Number*<input type="tel" pattern="[0-9\-\(\)]{9,}" id="phone" name="phone" autocomplete="tel" required></label>
                         </fieldset>
                         <fieldset>
                             <legend>Company Information</legend>

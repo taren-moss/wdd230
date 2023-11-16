@@ -58,6 +58,15 @@
         display: block;
     }
 
+    #meet-banner {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    #meet-banner p {
+        font-size: 150%;
+    }
+
     main {
         display: flex;
         flex-direction: column;
@@ -90,16 +99,16 @@
         margin: 3vh;
     }
 
-    .eventspace > div > .card {
-        height: 30vh;
+    #forecast {
+        flex-direction: row;
     }
 
-    .weatherspace > div > .card {
-        height: 40vh;
+    #forecast section {
+        font-size: 75%;
     }
 
     .eventspace > div {
-        grid-gap: 3vw;
+        column-gap: 2rem;
     }
 
     .eventspace > div > .card:hover, .spotlightspace > div > .card:hover {
