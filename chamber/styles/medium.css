@@ -134,7 +134,7 @@
     }
 
     .spotlightspace > div > .card {
-        height: 30vh;
+        height: auto;
     }
 
     .label {
@@ -293,7 +293,7 @@
         grid-column: 1/4;
     }
 
-    .directory {
+    .directory, #spotlight {
         grid-column: 1/3;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -302,21 +302,21 @@
         text-align: center;
     }
 
-    .directory > .card {
+    .directory > .card, #spotlight > .card {
         margin-bottom: 0;
     }
 
-    .directory > .card > img {
+    .directory > .card > img, #spotlight > .card > img {
         margin-top: 0.5rem;
         width: 240px;
         height: auto;
     }
 
-    .directory a:hover {
+    .directory a:hover, #spotlight a:hover {
         color: var(--hover-color);
     }
 
-    .directory > .card:hover {
+    .directory > .card:hover, #spotlight > .card:hover {
         transform: scale(1.025);
         transition-duration: 0.1s;
     }

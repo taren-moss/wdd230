@@ -496,26 +496,26 @@ input:valid {
 }
 
 /** Directory Page **/
-.directory {
+.directory, #spotlight {
     display: flex;
     flex-direction: column;
 }
 
-.directory > .card {
+.directory > .card, #spotlight > .card {
     text-align: center;
 }
 
-.directory > .card > img {
+.directory > .card > img, #spotlight > .card > img {
     margin-top: 0.5rem;
     width: 200px;
     height: auto;
 }
 
-.directory p {
+.directory p, #spotlight p {
     margin: 0;
 }
 
-.directory a {
+.directory a, #spotlight a {
     display: block;
     font-family: var(--text-font);
     color: var(--text-color);
@@ -523,7 +523,7 @@ input:valid {
     padding-top: 1rem;
 }
 
-.directory .card a {
+.directory .card a, #spotlight .card a {
     margin: 0 auto;
     width: fit-content;
     padding-top: 1rem;

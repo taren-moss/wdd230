@@ -1,12 +1,13 @@
 const themeSwitch = document.querySelector('.switch');
 const themeValue = document.querySelector('#theme-switch');
-const card = document.querySelectorAll('.card');
-const label = document.querySelectorAll('.card > h3');
-const call = document.querySelector('#call');
-const h1 = document.querySelector('h1');
 var root = document.querySelector(`:root`);
 
 themeSwitch.addEventListener('click', () => {
+    const card = document.querySelectorAll('.card');
+    const label = document.querySelectorAll('.card > h3');
+    const call = document.querySelector('#call');
+    const h1 = document.querySelector('h1');
+
     if (themeValue.checked) {
         root.style.setProperty('--main-color', '#ffc86a');
         root.style.setProperty('--secondary-color', '#f4a321');
