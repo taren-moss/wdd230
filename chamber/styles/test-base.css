@@ -218,13 +218,7 @@ footer {
     padding: 0.5rem 1rem;
 }
 
-/** Form **/
-
 /** Join Page **/
-.join section {
-    height: auto;
-}
-
 .join-info p{
     font-size: 85%;
 }
