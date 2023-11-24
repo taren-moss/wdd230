@@ -8,326 +8,99 @@
         --text-color: #ffe78e;
         --hover-color: #ffc86a;
         --background-color: #38175a;
+        --slider-color: #ffe78e;
+        --slider-background: #f4a321;
         --shadow-color: rgb(56, 23, 90, 0.75);
 
         --text-font: 'Titillium Web', Arial;
         --title-font: Gabarito, Helvetica;
-    }
 
-    #menu {
-        display: none;
-    }
-
-    nav {
-        display: grid;
-        grid-template-rows: 10vh 6vh;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 0 auto;
-    }
-
-    .navigation {
-        display: flex;
-        flex: auto;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        font-size: 3vh;
-        grid-row: 1/2;
-        grid-column: 1/4;
-        border-width: 0;
-        border-bottom-width: 2px;
-        border-style: solid;
-        border-color: var(--accent-color);
-        z-index: 1;
-    }
-
-    .navigation a {
-        text-decoration: none;
-        margin-top: 0.6rem;
-    }
-
-    .navigation a:hover {
-        color: var(--hover-color);
-        text-decoration: underline;
-    }
-
-    .nav-bottom {
-        display: flex;
-        flex: auto;
-        flex-direction: row;
-        align-items: center;
-        font-size: 2.5vh;
-        justify-content: center;
-    }
-
-    .nav-bottom a {
-        display: block;
-    }
-
-    #meet-banner {
+        background-color: var(--background-color);
+        font-family: var(--text-font);
+        color: var(--text-color);
         text-align: center;
-        margin: 0 auto;
-    }
-    
-    #meet-banner p {
-        font-size: 150%;
+        margin: 0 auto;   
     }
 
-    main {
-        display: flex;
-        flex-direction: column;
+    /** General **/
+    a {
+        text-decoration: none;
     }
 
-    .hero {
-        grid-template-rows: 1fr 2fr 2fr 1fr;
-        grid-template-columns: 1fr 3fr 1fr;
+    h1 {
+        min-width: 20rem;
     }
 
-    .hero > h1 {
-        font-size: 3vw;
-        padding: 1vw;
-        margin-top: 5vw;
-        background-color: var(--main-color);
-        box-shadow: 0vh 0vh 4vh 2vh var(--shadow-color);
+    h2 {
+        min-width: 10rem;
     }
 
-    .hero > a {
-        font-size: 2.5vw;
-        padding: 2.5vh;
-        margin-bottom: 5vw;
+    h3 {
+        font-size: 1rem;
+        padding-bottom: 1rem;
     }
 
-    .weatherspace {
-        font-size: 135%;
+    a:hover {
+        color: var(--hover-color);
     }
 
-    .weatherspace, .eventspace, .spotlightspace {
-        margin: 3vh;
-    }
-
-    #forecast {
-        flex-direction: row;
-    }
-
-    #forecast section {
-        font-size: 75%;
-    }
-
-    .eventspace > div {
-        column-gap: 2rem;
-    }
-
-    .eventspace > div > .card:hover, .spotlightspace > div > .card:hover {
+    .hover:hover {
         transform: scale(1.02);
         transition-duration: 0.1s;
     }
 
-    #call:hover {
-        transform: scale(1.05);
-        transition-duration: 0.05s;
+    /** Navigation **/
+    .navigation {
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: row;
+        padding: 0.4rem 1rem 0.5rem 1rem;
+        border-bottom: solid;
+        border-bottom-color: var(--accent-color);
+        border-width: 2px;
     }
 
-    .card > h3 {
-        font-size: 1.5vw;
-        padding: 1vw;
+    .nav-bottom {
+        background-color: var(--secondary-color);
+        padding: 1.5rem;
     }
 
-    .spotlightspace > div {
-        display: grid;
-        flex: auto;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 3vw;
+    .menu {
+        display: none;
     }
 
-    .spotlightspace > div > .card {
-        height: auto;
-    }
-
-    .label {
-        padding: 1vw;
-        width: 17.5vw;
-        margin-top: 2vw;
-        margin-bottom: 2vw;
-        font-size: 1.8vw;
-    }
-
-    footer {
-        grid-template-columns: 4fr 2fr 4fr 4fr;
-    }
-
-    #logo > img {
-        width: 100px;
-        height: auto;
-        padding: 5px;
-    }
-    
-    .footer-info h3 {
-        font-size: 90%;
-    }
-    
-    .footer-info p {
-        font-size: 90%;
-    }
-
-    /** Discover Page **/
-    .discover, .join, .thanks, .directory {
-        padding: 2rem;
-        justify-content: center;
-    }
-
-    .discover {
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: 3fr 4fr;
-        grid-gap: 2rem;
-        grid-column: 1/4;
-    }
-
-    h1 {
-        width: 30rem;
-        font-size: 250%;
-        grid-row: 1/2;
-        grid-column: 1/3;
-    }
-
-    .discover-info {
-        grid-row: 2/3;
-        grid-column: 1/2;
-    }
-
-    .discover-images {
-        grid-row: 2/3;
-        grid-column: 2/3;
-    }
-
-    .discover-images .card:hover, .join-info .card:hover {
-        transform: scale(1.025);
-        transition-duration: 0.1s;
-    }
-
-    /** Join Page **/
-    .join {
-        display: grid;
-        grid-template-rows: auto auto;
-        grid-template-columns: 3fr 3fr;
-        grid-gap: 2rem;
-        grid-column: 1/4;
-    }
-
-    .join-info {
-        grid-row: 2/3;
-        grid-column: 1/2;
-    }
-
-    .join-info p{
-        font-size: 100%;
-    }
-
-    .join-form {
-        grid-row: 2/3;
-        grid-column: 2/3;
-    }
-
-    ul {
-        font-size: 90%;
-    }
-
-    .join-form > section {
-        height: auto;
-    }
-
-    fieldset {
-        padding: 0.5rem 1rem;
-        margin-bottom: 1rem;
-    }
-    
-    form legend {
-        font-size: 100%;
-    }
-    
-    form label, form div {
-        font-size: 110%;
-    }
-    
-    form div {
-        padding-bottom: 1rem;
-    }
-    
-    .membership {
-        font-size: 100%;
-        padding-top: 0;
-        padding-bottom: 1rem;
-        margin-left: 1rem;
-    }
-    
-    input[type="text"], input[type="email"], input[type="tel"], textarea {
-        display: block;
-        padding: 0.3rem 2%;
-        width: 96%;
-        max-width: 25rem;
-        margin-bottom: 1rem;
-        border: none;
-        outline: none;
-    }
-    
-    input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
-        outline: solid;
-        outline-width: 3px;
-        outline-color: var(--accent-color);
-    }
-
-    .businessDescription {
-        padding-top: 1rem;
-    }
-    
-    textarea {
-        height: 10rem;
-    }
-
-    button {
+    /** Hero **/
+    .hero > h1 {
         width: 75%;
+        font-size: 160%;
+        padding: 1rem 2rem;
     }
 
-    /** Thanks Page **/
-    .thanks {
-        margin: 0 auto;
-        grid-column: 1/4;
+    .hero > a {
+        font-size: 160%;
+        padding: 1rem 2rem;
+        transform: translate(0%, -50%);
     }
 
-    /** Directory Page **/
-    h2.label {
-        grid-column: 1/4;
-    }
+    /** Cards **/
 
-    .directory, #spotlight {
+    /** Home **/
+    .flex-grid {
         grid-column: 1/3;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         grid-template-rows: auto;
-        grid-gap: 2rem;
         text-align: center;
     }
 
-    .directory > .card, #spotlight > .card {
-        margin-bottom: 0;
+    /** Discover **/
+    .discover {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
     }
 
-    .directory > .card > img, #spotlight > .card > img {
-        margin-top: 0.5rem;
-        width: 240px;
-        height: auto;
-    }
-
-    .directory a:hover, #spotlight a:hover {
-        color: var(--hover-color);
-    }
-
-    .directory > .card:hover, #spotlight > .card:hover {
-        transform: scale(1.025);
-        transition-duration: 0.1s;
-    }
-
-    .directory li {
+    /** Directory **/
+    #directory li {
         display: grid;
         grid-template-columns: 2fr 2fr 2fr 3fr;
         text-align: left;
@@ -336,8 +109,10 @@
         padding: 1rem;
     }
 
-    .directory li a {
-        padding-top: 0.4rem;
+    /** Join **/
+    .join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     /** Slider **/

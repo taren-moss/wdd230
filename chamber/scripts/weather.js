@@ -14,7 +14,6 @@ async function GetWeather(location) {
             const data = await response.json();
             SetWeather(data);
             GetForecast(forecastSource);
-            console.log(data);
         }
         else {
             throw Error(response.text);
@@ -61,7 +60,6 @@ async function GetForecast(location) {
         if (response.ok) {
             const data = await response.json();
             SetForecast(data);
-            console.log(data);
         }
         else {
             throw Error(response.text);

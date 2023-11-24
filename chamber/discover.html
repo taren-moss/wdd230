@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +11,18 @@
     <meta property="og:url" content="https://taren-moss.github.io/wdd230/chamber/discover.html">
     <title>Discover the Northwest Oregon Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/test-base.css">
-    <link rel="stylesheet" href="styles/test-medium.css">
-    <link rel="stylesheet" href="styles/test-larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
         <nav>
-            <a id="menu" href="#" aria-label="menu"></a>
+            <a class="menu" href="#" aria-label="menu"></a>
             <div class="navigation">
                 <a href="index.html">Home</a>
-                <a href="#" id="current">Discover</a>
+                <a href="#" class="current">Discover</a>
                 <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
             </div>
@@ -68,7 +68,7 @@
             </div>
             <div class="discover-images">
                 <h2 class="label">Locations</h2>
-                <section class="card">
+                <section class="card hover">
                     <h3>Haystack Rock</h3>
                     <picture>
                         <source media="(max-width: 600px)" srcset="images/haystack-small.webp">
@@ -76,7 +76,7 @@
                         <img src="images/haystack.webp" alt="Haystack Rock" width="1000" height="560" loading="lazy">
                     </picture>
                 </section>
-                <section class="card">
+                <section class="card hover">
                     <h3>Astoria-Megler Bridge</h3>
                     <picture>
                         <source media="(max-width: 600px)" srcset="images/megler-small.webp">
@@ -84,7 +84,7 @@
                         <img src="images/megler.webp" alt="Astoria Megler Bridge" width="1000" height="560" loading="lazy">
                     </picture>
                 </section>
-                <section class="card">
+                <section class="card hover">
                     <h3>Tillamook Creamery</h3>
                     <picture>
                         <source media="(max-width: 600px)" srcset="images/factory-small.webp">
@@ -92,7 +92,7 @@
                         <img src="images/factory.webp" alt="Tillamook Creamery" width="1000" height="560" loading="lazy">
                     </picture>
                 </section>
-                <section class="card">
+                <section class="card hover">
                     <h3>Peter Iredale Wreckage</h3>
                     <picture>
                         <source media="(max-width: 600px)" srcset="images/iredale-small.webp">
@@ -100,7 +100,7 @@
                         <img src="images/iredale.webp" alt="Peter Iredale Wreckage" width="1000" height="560" loading="lazy">
                     </picture>
                 </section>
-                <section class="card">
+                <section class="card hover">
                     <h3>Ecola State Park</h3>
                     <picture>
                         <source media="(max-width: 600px)" srcset="images/ecola-small.webp">
@@ -108,7 +108,7 @@
                         <img src="images/ecola.webp" alt="Ecola State Park" width="1000" height="560" loading="lazy">
                     </picture>
                 </section>
-                <section class="card">
+                <section class="card hover">
                     <h3>Fort Stevens State Park (Battery Russell)</h3>
                     <picture>
                         <source media="(max-width: 600px)" srcset="images/russell-small.webp">

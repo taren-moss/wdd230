@@ -38,7 +38,7 @@ function DisplayGrid(data) {
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(link);
-        card.setAttribute('class', 'card');
+        card.setAttribute('class', 'card hover');
 
         space.appendChild(card);
     });
