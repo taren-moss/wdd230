@@ -22,10 +22,6 @@
         margin: 0 auto;   
     }
 
-    html {
-        height: fit-content;
-    }
-
     /** General **/
     a {
         text-decoration: none;
@@ -111,11 +107,6 @@
         vertical-align: center;
         background-color: var(--secondary-color);
         padding: 1rem;
-    }
-
-    #directory p {
-        margin: 0;
-        font-size: 115%;
     }
 
     /** Join **/

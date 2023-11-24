@@ -233,12 +233,6 @@ footer {
     position: relative;
 }
 
-ul {
-    font-family: var(--text-font);
-    color: var(--text-color);
-    font-size: 80%;
-}
-
 form {
     margin: 1rem;
 }
@@ -320,7 +314,7 @@ input:valid {
     background-color: #daffda;
 }
 
-fieldset label, fieldset div {
+fieldset {
     text-align: left;
 }
 
@@ -424,14 +418,6 @@ input:checked + .slider {
 
 input:checked + .slider:before {
     background-color: var(--slider-color);
-  }
-
-input:focus + .slider {
-  box-shadow: 0 0 10px var(--shadow-color);
-}
-
-input:checked + .slider {
-    box-shadow: 0 0 10px var(--shadow-color);
   }
 
 input:checked + .slider:before {
