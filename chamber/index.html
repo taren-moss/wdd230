@@ -11,23 +11,17 @@
     <meta property="og:url" content="https://taren-moss.github.io/wdd230/chamber/index.html">
     <title>Northwest Oregon Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/test-base.css">
+    <link rel="stylesheet" href="styles/test-medium.css">
+    <link rel="stylesheet" href="styles/test-larger.css">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
         <nav>
             <a id="menu" href="#" aria-label="menu"></a>
-            <div class="nav-small">
-                <a href="#">Home</a>
-                <a href="discover.html">Discover</a>
-                <a href="directory.html">Directory</a>
-                <a href="join.html">Join</a>
-            </div>
-            <div class="nav-top">
-                <a href="#">Home</a>
+            <div class="navigation">
+                <a href="#" id="current">Home</a>
                 <a href="discover.html">Discover</a>
                 <a href="directory.html">Directory</a>
                 <a href="join.html">Join</a>
@@ -38,12 +32,10 @@
         <div id="meet-banner">
 
         </div>
-        <div class="switchbox">
-            <label class="switch">
-                <input type="checkbox" id="theme-switch" aria-label="Dark/Light Theme Switch">
-                <span class="slider"></span>
-            </label>
-        </div>
+        <label class="switch">
+            <input type="checkbox" id="theme-switch" aria-label="Dark/Light Theme Switch">
+            <span class="slider"></span>
+        </label>
     </header>
     <main>
         <div class="hero">
@@ -55,38 +47,38 @@
             <h1>Northwest Oregon Chamber of Commerce</h1>
             <a href="join.html" id="call">Join the Chamber!</a>
         </div>
-        <div class="weatherspace">
-            <h2 class="label">Weather</h2>
+        <div class="large-grid">
             <div>
+                <h2 class="label">Weather</h2>
                 <section class="card weather">
                     <h3>Weather</h3>
                 </section>
             </div>
-        </div>
-        <div class="eventspace">
-            <h2 class="label">Upcoming Events</h2>
             <div>
-                <section class="card event">
-                    <h3>Event</h3>
-                    <p>[Event info goes here]</p>
-                </section>
-                <section class="card event">
-                    <h3>Event</h3>
-                    <p>[Event info goes here]</p>
-                </section>
-                <section class="card event">
-                    <h3>Event</h3>
-                    <p>[Event info goes here]</p>
-                </section>
-                <section class="card event">
-                    <h3>Event</h3>
-                    <p>[Event info goes here]</p>
-                </section>
+                <h2 class="label">Upcoming Events</h2>  
+                <div class="flex-grid">
+                    <section class="card event">
+                        <h3>Event</h3>
+                        <p>[Event info goes here]</p>
+                    </section>
+                    <section class="card event">
+                        <h3>Event</h3>
+                        <p>[Event info goes here]</p>
+                    </section>
+                    <section class="card event">
+                        <h3>Event</h3>
+                        <p>[Event info goes here]</p>
+                    </section>
+                    <section class="card event">
+                        <h3>Event</h3>
+                        <p>[Event info goes here]</p>
+                    </section>
+                </div>
             </div>
         </div>
-        <div class="spotlightspace">
+        <div class="flex-space">
             <h2 class="label">Company Spotlights</h2>
-            <div id="spotlight">
+            <div class="flex-grid" id="spotlight">
             </div>
         </div>
     </main>

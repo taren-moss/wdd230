@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Gabarito|Titillium+Web");
+
+@media (min-width: 600px) {
+    :root {
+        --main-color: #683571;
+        --secondary-color: #512466;
+        --accent-color: #f4a321;
+        --text-color: #ffe78e;
+        --hover-color: #ffc86a;
+        --background-color: #38175a;
+        --slider-color: #ffe78e;
+        --slider-background: #f4a321;
+        --shadow-color: rgb(56, 23, 90, 0.75);
+
+        --text-font: 'Titillium Web', Arial;
+        --title-font: Gabarito, Helvetica;
+
+        background-color: var(--background-color);
+        font-family: var(--text-font);
+        color: var(--text-color);
+        text-align: center;
+        margin: 0 auto;   
+    }
+
+    html {
+        height: fit-content;
+    }
+
+    /** General **/
+    a {
+        text-decoration: none;
+    }
+
+    h1 {
+        min-width: 20rem;
+    }
+
+    h2 {
+        min-width: 10rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    a:hover {
+        color: var(--hover-color);
+    }
+
+    /** Navigation **/
+    .navigation {
+        background-color: var(--main-color);
+        display: flex;
+        flex-direction: row;
+        padding: 0.4rem 1rem 0.5rem 1rem;
+        border-bottom: solid;
+        border-bottom-color: var(--accent-color);
+        border-width: 2px;
+    }
+
+    .nav-bottom {
+        background-color: var(--secondary-color);
+        padding: 1.5rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #current {
+        text-decoration: underline;
+        text-decoration-color: var(--hover-color);
+    }
+
+    /** Hero **/
+    .hero > h1 {
+        width: 75%;
+        font-size: 160%;
+        padding: 1rem 2rem;
+    }
+
+    .hero > a {
+        font-size: 160%;
+        padding: 1rem 2rem;
+        transform: translate(0%, -50%);
+    }
+
+    /** Cards **/
+
+    /** Home **/
+    .flex-grid {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: auto;
+        text-align: center;
+    }
+
+    /** Discover **/
+    .discover {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+    }
+
+    /** Directory **/
+    #directory li {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 3fr;
+        text-align: left;
+        vertical-align: center;
+        background-color: var(--secondary-color);
+        padding: 1rem;
+    }
+
+    #directory p {
+        margin: 0;
+        font-size: 115%;
+    }
+
+    /** Join **/
+    .join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /** Slider **/
+    .switchbox {
+        margin-top: 9.5vh;
+    }
+
+    .switch {
+        width: 60px;
+        height: 34px;
+    }
+
+    .slider:before {
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+}

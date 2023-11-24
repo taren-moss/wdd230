@@ -25,21 +25,6 @@ nav {
     flex-direction: column;
 }
 
-.nav-small {
-    background-color: var(--secondary-color);
-    display: none;
-    text-align: center;
-}
-
-.nav-small a {
-    color: var(--text-color);
-    font-family: var(--text-font);
-    font-size: 3vh;
-    text-decoration: none;
-    border-bottom-width: 2px;
-    padding: 2vh;
-}
-
 #menu {
     background-color: var(--main-color);
     margin: 0 auto;
@@ -56,6 +41,18 @@ nav {
     content: '≡';
 }
 
+.navigation {
+    display: none;
+    text-align: center;
+    font-size: 125%; 
+}
+
+.navigation a {
+    padding-bottom: 1rem;
+    color: var(--text-color);
+    font-family: var(--text-font);
+}
+
 .show {
     display: flex;
     flex-direction: column;
@@ -65,10 +62,6 @@ nav {
     color: var(--text-color);
     font-size: 3vh;
     content: '✖';
-}
-
-.nav-top {
-    display: none;
 }
 
 .nav-bottom {
@@ -413,6 +406,8 @@ form div {
 
 .membership {
     font-family: var(--text-font);
+    text-align: left;
+    margin-left: 0;
     font-size: 100%;
     padding-top: 0.6rem;
     padding-bottom: 1.2rem;

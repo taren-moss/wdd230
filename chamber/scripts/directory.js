@@ -1,4 +1,4 @@
-const space = document.querySelector('.directory');
+const space = document.querySelector('#directory');
 const gridButton = document.querySelector('#grid-button');
 const listButton = document.querySelector('#list-button');
 const themeSwitch = document.querySelector('.switch');

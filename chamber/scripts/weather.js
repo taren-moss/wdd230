@@ -35,6 +35,7 @@ function SetWeather(data) {
     location.innerText = data.name;
     icon.setAttribute('src', url);
     icon.setAttribute('alt', data.weather[0].description);
+    icon.setAttribute('class', 'weather-icon');
     weatherData.innerHTML = `${FindDay(new Date().getDay())}<br>${data.weather[0].description}<br>${data.main.temp.toFixed(0)}°F<br>Wind: ${data.wind.speed.toFixed(1)} MPH`;
     windChill.textContent = `Wind Chill: ${WindChill(data.main.temp, data.wind.speed)}`;
 
@@ -83,6 +84,7 @@ function SetForecast(input) {
 
             icon.setAttribute('src', url);
             icon.setAttribute('alt', data.weather[0].description);
+            icon.setAttribute('class', 'weather-icon');
             information.innerHTML = `${FindDay(new Date(data.dt * 1000).getDay())}<br>${data.weather[0].description}<br>${data.main.temp.toFixed(0)}°F`;
 
             section.appendChild(icon);

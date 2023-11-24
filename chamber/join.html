@@ -11,40 +11,32 @@
     <meta property="og:url" content="https://taren-moss.github.io/wdd230/chamber/index.html">
     <title>Join the Northwest Oregon Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/test-base.css">
+    <link rel="stylesheet" href="styles/test-medium.css">
+    <link rel="stylesheet" href="styles/test-larger.css">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
         <nav>
             <a id="menu" href="#" aria-label="menu"></a>
-            <div class="nav-small">
+            <div class="navigation">
                 <a href="index.html">Home</a>
                 <a href="discover.html">Discover</a>
                 <a href="directory.html">Directory</a>
-                <a href="#">Join</a>
-            </div>
-            <div class="nav-top">
-                <a href="index.html">Home</a>
-                <a href="discover.html">Discover</a>
-                <a href="directory.html">Directory</a>
-                <a href="#">Join</a>
+                <a href="#" id="current">Join</a>
             </div>
             <div class="nav-bottom">
             </div>
         </nav>
-        <div class="switchbox">
-            <label class="switch">
-                <input type="checkbox" id="theme-switch" aria-label="Dark/Light Theme Switch">
-                <span class="slider"></span>
-            </label>
-        </div>
+        <label class="switch">
+            <input type="checkbox" id="theme-switch" aria-label="Dark/Light Theme Switch">
+            <span class="slider"></span>
+        </label>
     </header>
     <main>
+        <h1>Join the Chamber!</h1>
         <div class="join">
-            <h1>Join the Chamber!</h1>
             <div class="join-info">
                 <h2 class="label">Membership Info</h2>
                 <section class="card">
@@ -108,7 +100,7 @@
                         </fieldset>
                         <fieldset>
                             <legend>Contact Information</legend>
-                            <label>Email*<input type="email" id="email" placeholder="example@gmail.com" name="email" autocomplete="email" required></label>
+                            <label>Email*<input type="email" id="email" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" placeholder="example@gmail.com" name="email" autocomplete="email" required></label>
                             <label>Mobile Number*<input type="tel" pattern="[0-9\-\(\)]{9,}" id="phone" name="phone" autocomplete="tel" required></label>
                         </fieldset>
                         <fieldset>
