@@ -23,7 +23,6 @@ function DisplayGrid(data) {
 
         logo.setAttribute('src', company.img);
         logo.setAttribute('alt', `${company.name} Logo`);
-        logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '600');
         logo.setAttribute('height', '400');
 
