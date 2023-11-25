@@ -18,8 +18,8 @@
     font-family: var(--text-font);
     color: var(--text-color);
     text-align: center;
-    font-display: swap;
 }
+
 /** General **/
 a {
     font-family: var(--text-font);
