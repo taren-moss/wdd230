@@ -20,6 +20,7 @@
         color: var(--text-color);
         text-align: center;
         margin: 0 auto;
+        font-display: swap;
     }
 
     /** General **/
