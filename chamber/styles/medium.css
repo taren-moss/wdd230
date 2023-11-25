@@ -44,11 +44,6 @@
         color: var(--hover-color);
     }
 
-    .hover:hover {
-        transform: scale(1.02);
-        transition-duration: 0.1s;
-    }
-
     /** Navigation **/
     .navigation {
         background-color: var(--main-color);

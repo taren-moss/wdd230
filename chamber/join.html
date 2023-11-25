@@ -105,7 +105,7 @@
                         </fieldset>
                         <fieldset>
                             <legend>Company Information</legend>
-                            <label>Business/Organization*<input type="text" id="businessName" name="businessName" autocomplete="off"  required></label>
+                            <label>Business/Organization*<input type="text" pattern="[a-zA-Z\s]{7,}" id="businessName" name="businessName" autocomplete="off"  required></label>
                             <div>Membership Level</div>
                                 <label class="membership"><input type="radio" name="membership" value="nonprofit" class="radio"> Non Profit Membership</label>
                                 <label class="membership"><input type="radio" name="membership" value="bronze" class="radio"> Bronze Membership</label>
@@ -135,5 +135,6 @@
 <script src="scripts/hamburger.js"></script>
 <script src="scripts/getdates.js"></script>
 <script src="scripts/themetogglesubpage.js"></script>
+<script src="scripts/formdate.js"></script>
 </body>
 </html>

@@ -11,6 +11,7 @@ async function GetCompanyData(DisplayType) {
 }
 
 function DisplayGrid(data) {
+    let counter = data.length;
     data.forEach((company) => {
         let card = document.createElement('section');
         let name = document.createElement('h3');
@@ -25,6 +26,10 @@ function DisplayGrid(data) {
         logo.setAttribute('alt', `${company.name} Logo`);
         logo.setAttribute('width', '600');
         logo.setAttribute('height', '400');
+        if(counter <= 4) {
+            logo.setAttribute('loading', 'lazy');
+        }
+        counter -= 1;
 
         address.textContent = company.address;
         phone.textContent = company.phone;
