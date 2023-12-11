@@ -49,12 +49,12 @@
             <form method="get" action="confirmed.html">
                 <fieldset>
                     <legend>Customer Information</legend>
-                    <label>First Name*<input type="text" id="firstName" name="firstName" autocomplete="off" required></label>
-                    <label>Last Name*<input type="text" id="lastName" name="firstName" autocomplete="off" required></label>
+                    <label>First Name*<input type="text" id="firstName" name="firstName" autocomplete="name" required></label>
+                    <label>Last Name*<input type="text" id="lastName" name="firstName" autocomplete="family-name" required></label>
                     <label>Email*<input type="email" id="email" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" placeholder="example@gmail.com" name="email" autocomplete="email" required></label>
                     <label>Phone Number*<input type="tel" pattern="[0-9\-\(\)]{9,}" id="phone" name="phone" autocomplete="tel" required></label>
-                    <label>Home State/Country*<input type="text" id="country" name="country" required></label>
-                    <label>Cruise Line (If applicable)<input type="text" id="cruise" name="cruise"></label>
+                    <label>Home State/Country*<input type="text" id="country" name="country" required autocomplete="country"></label>
+                    <label>Cruise Line (If applicable)<input type="text" id="cruise" name="cruise" autocomplete="off"></label>
                 </fieldset>
                 <fieldset>
                     <legend>Rental Information</legend>
