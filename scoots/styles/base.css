@@ -346,7 +346,7 @@ table {
     margin: 0 auto;
     width: 95%;
     max-width: 40rem;
-    font-size: 75%;
+    font-size: 90%;
     border-radius: var(--page-border-radius);
 }
 
@@ -356,6 +356,10 @@ caption {
 
 td, th {
     padding: 0.6rem 0.6rem;
+}
+
+table > td {
+    font-size: 100rem;
 }
 
 thead {

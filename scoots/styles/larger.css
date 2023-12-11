@@ -155,7 +155,8 @@
 
     /** Table **/
     table {
-        font-size: 100%;
+        font-size: 115%;
+        max-width: 50rem;
     }
 
     td, th {
