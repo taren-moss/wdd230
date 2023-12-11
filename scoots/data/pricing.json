@@ -1,0 +1,148 @@
+{
+    "rentals": [
+        {
+            "type": "~Honda Metro Scooter",
+            "img": "metro_scooter.webp",
+            "info": "49cc",
+            "seats": 1,
+            "pricing": [
+                {
+                    "reservation": [
+                        {
+                            "half": 20,
+                            "full": 30
+                        }
+                    ]
+                },
+                {
+                    "walkin": [
+                        {
+                            "half": 25,
+                            "full": 35
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "~Honda Dio Scooter",
+            "img": "dio_scooter.webp",
+            "info": "110cc",
+            "seats": 2,
+            "pricing": [
+                {
+                    "reservation": [
+                        {
+                            "half": 30,
+                            "full": 40
+                        }
+                    ]
+                },
+                {
+                    "walkin": [
+                        {
+                            "half": 35,
+                            "full": 45
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "~Honda PCX150 Scooter",
+            "img": "pcx150_scooter.webp",
+            "info": "149cc",
+            "seats": 2,
+            "pricing": [
+                {
+                    "reservation": [
+                        {
+                            "half": 40,
+                            "full": 50
+                        }
+                    ]
+                },
+                {
+                    "walkin": [
+                        {
+                            "half": 45,
+                            "full": 55
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Honda Pioneer ATV",
+            "img": "pioneer_atv.webp",
+            "info": "ATV",
+            "seats": 4,
+            "pricing": [
+                {
+                    "reservation": [
+                        {
+                            "half": 50,
+                            "full": 70
+                        }
+                    ]
+                },
+                {
+                    "walkin": [
+                        {
+                            "half": 60,
+                            "full": 70
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Jeep Wrangler - 4 door with a/c",
+            "img": "wrangler_4door.webp",
+            "info": "Manual Drive",
+            "seats": 5,
+            "pricing": [
+                {
+                    "reservation": [
+                        {
+                            "half": 70,
+                            "full": 100
+                        }
+                    ]
+                },
+                {
+                    "walkin": [
+                        {
+                            "half": 85,
+                            "full": 125
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Jeep Wrangler - 2 door",
+            "img": "wrangler_2door.webp",
+            "info": "Manual Drive",
+            "seats": 4,
+            "pricing": [
+                {
+                    "reservation": [
+                        {
+                            "half": 60,
+                            "full": 80
+                        }
+                    ]
+                },
+                {
+                    "walkin": [
+                        {
+                            "half": 70,
+                            "full": 90
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reserve a rental at ~Scoots~ and be ready for an adventure!">
+    <meta name="author" content="Taren Moss">
+    <meta property="og:title" content="Reservations at ~Scoots~">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://taren-moss.github.io/wdd230/scoots/images/preview.jpg">
+    <meta property="og:url" content="https://taren-moss.github.io/wdd230/scoots/reservations.html">
+    <title>Reservations at ~Scoots~</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="scoots.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu" aria-label="menu"></button>
+            <div class="navigation">
+                <img src="images/logo.webp" alt="~Scoots~ Logo" id="logo" width="180" height="180">
+                <a href="index.html">Home</a>
+                <a href="rentals.html">Rentals</a>
+                <a class="currentPage" href="#">Reservations</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="label">Reservation Form</h1>
+        <div class="flex">
+            <section class="agreements">
+                <h2 class="label">Agreements</h2>
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+            </section>
+            <form method="get" action="confirmed.html">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label>First Name*<input type="text" id="firstName" name="firstName" autocomplete="off" required></label>
+                    <label>Last Name*<input type="text" id="lastName" name="firstName" autocomplete="off" required></label>
+                    <label>Email*<input type="email" id="email" pattern="[^\s@]+@[^\s@]+\.[^\s@]+" placeholder="example@gmail.com" name="email" autocomplete="email" required></label>
+                    <label>Phone Number*<input type="tel" pattern="[0-9\-\(\)]{9,}" id="phone" name="phone" autocomplete="tel" required></label>
+                    <label>Home State/Country*<input type="text" id="country" name="country" required></label>
+                    <label>Cruise Line (If applicable)<input type="text" id="cruise" name="cruise"></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Rental Information</legend>
+                    <label>Person Count*<input type="text" id="count" name="count" pattern="[0-9]{1,2}" required></label>
+                    <label for="rental-type">Rental Type*</label>
+                    <select id="rental-type" name="rental-type" required>
+                        <option value="unselected">~Unselected~</option>
+                        <option value="metro-scooter">~Honda Metro Scooter</option>
+                        <option value="dio-scooter">~Honda Dio Scooter</option>
+                        <option value="pcx150-scooter">~Honda PCX150 Scooter</option>
+                        <option value="pioneer-atv">Honda Pioneer ATV</option>
+                        <option value="jeep-wrangler-4">Jeep Wrangler - 4 Door</option>
+                        <option value="jeep-wrangler-2">Jeep Wrangler - 2 Door</option>
+                    </select>
+                    <label>Rental Duration*</label>
+                        <label class="rental-duration"><input type="radio" name="rental-duration" value="half" class="radio"> Half Day (3h)</label>
+                        <label class="rental-duration"><input type="radio" name="rental-duration" value="full" class="radio"> 1 Full Day</label>
+                        <label class="rental-duration"><input type="radio" name="rental-duration" value="double" class="radio"> 2 Full Days</label>
+                        <label class="rental-duration"><input type="radio" name="rental-duration" value="double" class="radio"> 3 Full Days</label>
+                    <label class="other">Other Comments<textarea id="other" name="other" placeholder="(Comments, special accommodations, location of drop-off, etc)"></textarea></label>
+                </fieldset>
+                <input type="hidden" class="date" name="date">
+                <button class="bigbutton submit" type="submit">Make your Reservation!</button>
+            </form>
+        </div>
+    </main>
+    <footer class="flex">
+        <div>
+            <section class="about">
+                <p class="year"></p>
+                <a href="contact.html" target="blank">Contact us here!</a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d139223.4356364617!2d-86.98303046767393!3d20.439457170872224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1701806994286!5m2!1sen!2sus" width="300" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            <section class="social">
+                <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.webp" alt="facebook icon" width="50" height="50"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="images/twitter.webp" alt="twitter icon" width="50" height="50"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.webp" alt="linkedin icon" width="50" height="50"></a>
+            </section>
+        </div>
+        <img src="images/logo.webp" alt="~Scoots~ Logo" width="180" height="180">
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/formdate.js"></script>
+</body>
+</html>

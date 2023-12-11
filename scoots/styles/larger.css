@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css?family=Gabarito|Titillium+Web");
+
+@media (min-width: 800px) {
+    :root {
+        --page-border-radius: 0.8rem;
+        --base-color: #AC2B32;
+        --text-hover: #fed89c;
+    }
+
+    /** Navigation **/
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        background-color: var(--base-color);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    nav a:hover {
+        color: var(--text-hover);
+    }
+
+    #logo {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    /** Banner **/
+    #banner {
+        background-color: var(--secondary-color);
+        margin: 0 0 0 0;
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+        padding: 0.5rem 0 0.5rem 0;
+    }
+    
+    #banner p {
+        font-size: 125%;
+    }
+
+    /** Hero **/
+    .hero-overlay {
+        width: 50%;
+        top: 40%;
+    }
+
+    .hero-overlay > h1 {
+        font-size: 200%;
+    }
+    
+    .hero-overlay > p {
+        font-size: 120%;
+        padding: 1rem 2.5rem;
+    }
+
+    /** General **/
+    .flex {
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-around;
+    }
+
+    section img {
+        width: 95%;
+    }
+
+    section div {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hover:hover {
+        transform: scale(1.02);
+        transition-duration: 0.1s;
+    }
+
+    .bigbutton {
+        display: block;
+        margin: 1rem auto 0 auto;
+        width: fit-content;
+        font-size: 180%;
+        border-radius: 1.6rem;
+    }
+
+    .smallbutton {
+        display: block;
+        padding: 0.3rem 0.9rem;
+        background-color: var(--base-color);
+        border-radius: 1.5rem;
+        font-size: 125%;
+    }
+
+    .bigbutton:hover, .smallbutton:hover {
+        color: var(--text-hover);
+        transform: scale(1.05);
+        transition-duration: 0.05s;
+    }
+
+    /** Footer **/
+    footer div {
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: auto;
+    }
+
+    .social {
+        flex-direction: column;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: auto;
+        width: fit-content;
+    }
+
+    .social img {
+        padding: 1.5rem 0;
+    }
+
+    .social img:hover {
+        transform: scale(1.1);
+        transition-duration: 0.1s;
+    }
+
+    .about {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    footer > img {
+        padding-right: 2rem;
+        align-self: center;
+    }
+
+    footer a:hover {
+        color: var(--text-hover);
+    }
+
+    /** Rental **/
+    #rentalSpace {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .rentalcard p {
+        font-size: 100%;
+    }
+
+    /** Table **/
+    table {
+        font-size: 100%;
+    }
+
+    td, th {
+        padding: 1rem;
+        max-width: 60rem;
+    }
+
+    /** Reservation Page **/
+    .agreements {
+        margin: 0 1rem 1rem 2rem;
+    }
+
+    li {
+        padding: 0.5rem;
+        max-width: 35rem;
+        font-size: 125%;
+        margin-right: 1.5rem;
+    }
+
+    .confirm h2 {
+        font-size: 160%;
+    }
+
+    /** Form **/
+    form {
+        margin: 0 2rem 1rem 1rem;
+    }
+
+    /** Contact **/
+    .contact-form form {
+        margin: 0 auto;
+    }
+
+    .contact .social {
+        flex-direction: row;
+        justify-content: space-around;
+        min-width: 30rem;
+    }
+}

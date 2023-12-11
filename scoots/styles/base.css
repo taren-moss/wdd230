@@ -1,0 +1,536 @@
+@import url("https://fonts.googleapis.com/css?family=Neuton|Patua+One");
+
+:root {
+    /** Colors **/
+    --base-color: #AC2B32;
+    --intermediate-color: #99262c;
+    --secondary-color: #832126;
+    --opacity-red: #832126e6;
+    --accent-color: #2BACA5;
+    --background-color: #ffdfbd;
+    --text-color: #fcf4cd;
+    --text-hover: #fed89c;
+
+    /** Fonts **/
+    --title-font: 'Patua One', Arial;
+    --text-font: Neuton, Helvetica;
+    font-family: var(--text-font);
+    color: var(--text-color);
+
+    /** Global **/
+    --page-border-radius: 0.6rem;
+    background-color: var(--background-color);
+}
+
+/** Navigation **/
+nav {
+    background-color: var(--secondary-color);
+    width: 100%;
+}
+
+#menu {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--base-color);
+    padding: 1rem;
+}
+
+#menu::before {
+    content: "▼";
+    font-size: 150%;
+    color: var(--text-color);
+}
+
+#menu.show::before {
+    content: "▲";
+    color: var(--text-hover);
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 0.8rem;
+}
+
+.navigation {
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+}
+
+#logo {
+    display: none;
+    width: 100px;
+    height: auto;
+}
+
+.currentPage {
+    text-decoration: underline;
+    text-decoration-color: var(--text-hover);
+}
+
+/** General **/
+h1 {
+    text-align: center;
+    padding: 0 1rem;
+    font-family: var(--title-font);
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    text-align: center;
+}
+
+.label {
+    margin: 1rem auto 0.5rem auto;
+    padding: 0.1rem 0.5rem;
+    color: var(--base-color);
+    border-bottom-style: solid;
+    border-color: var(--accent-color);
+    min-width: 10rem;
+    width: fit-content;
+    border-radius: var(--page-border-radius);
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+section {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--page-border-radius);
+}
+
+div {
+    border-radius: var(--page-border-radius);
+}
+
+.bigbutton {
+    display: block;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--base-color);
+    border-radius: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    max-width: 20rem;
+    font-family: var(--title-font);
+    margin: 1rem auto;
+    width: fit-content;
+}
+
+.smallbutton {
+    display: block;
+    padding: 0.2rem 0.6rem;
+    background-color: var(--base-color);
+    border-radius: 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+    max-width: 20rem;
+    font-family: var(--title-font);
+    margin: 0 auto;
+    width: fit-content;
+    border: none;
+    outline: none;
+}
+
+p, a {
+    font-size: 1.2rem;
+}
+
+/** Banner **/
+#banner {
+    background-color: var(--secondary-color);
+    margin: 0 0 0 0;
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+#banner p {
+    padding: 0.5rem;
+    margin: 0 0 0 0;
+}
+
+/** Hero **/
+#hero {
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--opacity-red);
+    width: 60%;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    border-radius: var(--page-border-radius);
+}
+
+.hero-overlay > h1 {
+    font-size: 150%;
+    margin: 0;
+}
+
+.hero-overlay > p {
+    font-size: 80%;
+    padding-bottom: 1rem;
+}
+
+/** Weather **/
+#weather {
+    background-color: var(--base-color);
+    height: auto;
+    padding: 1rem;
+}
+
+#weather p {
+    margin: 0 0 0.5rem 0;
+}
+
+#weather img {
+    width: 50px;
+}
+
+#weather section {
+    border-radius: var(--page-border-radius);
+}
+
+#weather h2 {
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1.5rem;
+    margin: 0 auto 1rem auto;
+    border-radius: 1.5rem;
+    width: fit-content;
+}
+
+#forecast {
+    margin-top: 1rem;
+}
+
+#forecast section {
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+/** Rental Info **/
+#rental-info {
+    background-color: var(--base-color);
+}
+
+#rental-info section {
+    width: 100%;
+}
+
+/** Footer **/
+footer {
+    background-color: var(--base-color);
+    margin-top: 2rem;
+}
+
+footer div {
+    display: grid;
+    grid-template-rows: 26rem 4rem;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+iframe {
+    border: none;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: var(--page-border-radius);
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+}
+
+.about {
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social a {
+    width: 50px;
+}
+
+.social img {
+    width: 50px;
+    height: auto;
+    padding-bottom: 1rem;
+}
+
+footer a {
+    color: var(--text-color);
+}
+
+/** Rental **/
+#rentalSpace {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-row-gap: 2rem;
+}
+
+#rentalSpace img {
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/** Rental Cards **/
+.rentalcard {
+    background-color: var(--base-color);
+    padding: 0.5rem;
+    margin: 0 auto;
+    border-radius: var(--page-border-radius);
+}
+
+.rentalcard div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.rentalcard p {
+    margin: 0.5rem auto;
+    font-size: 90%;
+}
+
+.rentalcard > p:first-child {
+    font-size: 125%;
+}
+
+/** Table **/
+table {
+    border-spacing: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 40rem;
+    font-size: 75%;
+    border-radius: var(--page-border-radius);
+}
+
+caption {
+    display: none;
+}
+
+td, th {
+    padding: 0.6rem 0.6rem;
+}
+
+thead {
+    background-color: var(--base-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--base-color);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--secondary-color);
+}
+
+/** Table Head Corners **/
+thead {
+    border-top-right-radius: var(--page-border-radius);
+    border-top-left-radius: var(--page-border-radius);
+}
+
+tr:first-child th:first-child {
+    border-top-left-radius: var(--page-border-radius);
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: var(--page-border-radius);
+}
+
+/** Table Body Corners **/
+thead {
+    font-family: var(--title-font);
+}
+
+tbody {
+    border-bottom-right-radius: var(--page-border-radius);
+    border-bottom-left-radius: var(--page-border-radius);
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: var(--page-border-radius);
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: var(--page-border-radius);
+}
+
+/** Reservation Page **/
+.agreements, .contact {
+    background-color: var(--base-color);
+    border-radius: var(--page-border-radius);
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    max-width: 50rem;
+}
+
+.agreements .label, .contact .label {
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 1.5rem;
+}
+
+ul {
+    text-align: left;
+}
+
+li {
+    padding: 0.3rem;
+    max-width: 17rem;
+}
+
+.confirm {
+    background-color: var(--base-color);
+    border-radius: var(--page-border-radius);
+    width: 90%;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.confirm h2 {
+    background-color: var(--secondary-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    width: fit-content;
+    margin: 0 auto 1rem auto;
+    font-size: 125%;
+}
+
+/** Form **/
+form {
+    background-color: var(--secondary-color);
+    width: 95%;
+    max-width: 40rem;
+    padding: 0.5rem;
+    border-radius: var(--page-border-radius);
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    font-family: var(--title-font);
+}
+
+legend {
+    font-family: var(--title-font);
+    padding: 0.2rem 0.6rem;
+    background-color: var(--secondary-color);
+    border-radius: var(--page-border-radius);
+
+}
+
+fieldset {
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--base-color);
+    border-radius: var(--page-border-radius);
+    background-color: var(--base-color);
+}
+
+fieldset:first-child {
+    margin-bottom: 0.7rem;
+}
+
+input, select, textarea {
+    display: block;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border-radius: var(--page-border-radius);
+    border: solid;
+    border-color: var(--secondary-color);
+}
+
+input:focus {
+    background-color: var(--background-color);
+}
+
+input:valid {
+    border-style: solid;
+    border-color: var(--accent-color);
+    border-width: 0;
+    border-left-width: 10px;
+}
+
+input {
+    width: 90%;
+    max-width: 20rem;
+}
+
+textarea {
+    width: 90%;
+    max-width: 20rem;
+    height: 5rem;
+}
+
+.rental-duration {
+    display: block;
+    margin-left: 1rem;
+    align-items: center;
+    font-family: var(--text-font);
+    padding: 0.4rem;
+}
+
+.rental-duration input {
+    display: inline;
+    width: fit-content;
+    margin-left: 1rem;
+}
+
+.submit {
+    display: block;
+    outline: none;
+    border: none;
+    margin: 1rem auto 0.5rem auto;
+    padding: 0.8rem 1.5rem;
+    max-width: 30rem;
+    text-align: center;
+}
