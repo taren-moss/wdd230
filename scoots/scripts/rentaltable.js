@@ -3,7 +3,6 @@ const table = document.querySelector('tbody');
 async function GetRentalData() {
     const response = await fetch("data/pricing.json");
     const data = await response.json();
-    console.log(data.rentals);
     RentalTable(data.rentals);
 }
 

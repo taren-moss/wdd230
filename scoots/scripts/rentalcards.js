@@ -3,7 +3,6 @@ const rentalSpace = document.querySelector('#rentalSpace');
 async function GetRentalData() {
     const response = await fetch("data/pricing.json");
     const data = await response.json();
-    console.log(data.rentals);
     ConstructCards(data.rentals);
 }
 
