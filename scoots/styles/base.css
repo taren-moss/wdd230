@@ -134,7 +134,7 @@ div {
     text-align: center;
     max-width: 20rem;
     font-family: var(--title-font);
-    margin: 1rem auto;
+    margin: 0.6rem auto;
     width: fit-content;
 }
 
@@ -189,15 +189,15 @@ p, a {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--opacity-red);
-    width: 60%;
-    padding: 1rem;
-    padding-bottom: 1.5rem;
+    width: 75%;
+    max-width: 30rem;
+    padding: 0.6rem;
     text-align: center;
     border-radius: var(--page-border-radius);
 }
 
 .hero-overlay > h1 {
-    font-size: 150%;
+    font-size: 125%;
     margin: 0;
 }
 
