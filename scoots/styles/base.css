@@ -2,13 +2,16 @@
 
 :root {
     /** Colors **/
-    --base-color: #AC2B32;
-    --intermediate-color: #99262c;
-    --secondary-color: #832126;
-    --opacity-red: #832126e6;
+    --old-base-color: #AC2B32;
+    --base-color: #9f232c;
+    --old-secondary-color: #832126;
+    --secondary-color: #791c21;
+    --old-opacity-red: #832126e6;
+    --opacity-red: #791c21e6;
     --accent-color: #2BACA5;
     --background-color: #ffdfbd;
-    --text-color: #fcf4cd;
+    --old-text-color: #fcf4cd;
+    --text-color: #fef6d1;
     --text-hover: #fed89c;
 
     /** Fonts **/
