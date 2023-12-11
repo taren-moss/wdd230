@@ -258,7 +258,7 @@ footer {
     margin-top: 2rem;
 }
 
-footer div {
+footer > div {
     display: grid;
     grid-template-rows: 26rem 4rem;
     width: 100%;
