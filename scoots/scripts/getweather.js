@@ -37,6 +37,8 @@ function SetWeather(data) {
     icon.setAttribute('src', url);
     icon.setAttribute('alt', data.weather[0].description);
     icon.setAttribute('class', 'weather-icon');
+    icon.setAttribute('width', '50');
+    icon.setAttribute('height', '50');
     weatherData.innerHTML = `${data.weather[0].description}<br>${data.main.temp.toFixed(0)}°F<br>Humidity: ${data.main.humidity.toFixed(0)}%`;
 
     weather.appendChild(location);
@@ -74,6 +76,8 @@ function SetForecast(input) {
     icon.setAttribute('src', url);
     icon.setAttribute('alt', data.weather[0].description);
     icon.setAttribute('class', 'weather-icon');
+    icon.setAttribute('width', '50');
+    icon.setAttribute('height', '50');
     information.innerHTML = `${data.weather[0].description}<br>${data.main.temp.toFixed(0)}°F<br>Humidity: ${data.main.humidity.toFixed(0)}%`;
 
     section.appendChild(tomorrow);
